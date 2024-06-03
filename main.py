@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6775811275:AAEoE5BrrFIAdnhqs8B4LpMhDBBkKEhSOrk",
-             api_id= 20778821,
-             api_hash= "70ddbf0162bafe8b7e0007c3b22d01c0")
+             bot_token= "6997824098:AAEi8r69glEMYjUKxx4zHMlkm54Vx5062GE",
+             api_id= 20346550,
+             api_hash= "bc79c3bea7a626887bdc0871eecf0327")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /vastavik")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Txt")
 
 
 @bot.on_message(filters.command("stop"))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["vastavik"]))
+@bot.on_message(filters.command(["Txt"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
