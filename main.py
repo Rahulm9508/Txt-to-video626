@@ -22,7 +22,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6997824098:AAEi8r69glEMYjUKxx4zHMlkm54Vx5062GE",
+             bot_token= "6943343929:AAFuwiFaU09iJs82yfuGSNI3aLzK0gA8kd0",
              api_id= 20346550,
              api_hash= "bc79c3bea7a626887bdc0871eecf0327")
 
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} {MR}.mkv\n**Batch »** {raw_text0}\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} {MR}.pdf \n**Batch »** {raw_text0}\n\n'
+                cc = f'[ 🎬 ] Vid ID :** {str(count).zfill(3)}\n**Video Title :** {name1} {res} {MR}.mp4\n**Batch Name :** {raw_text0}\n\n'
+                cc1 = f'[📕 ] Vid ID :** {str(count).zfill(3)}\n**Video Title :** {name1} {MR}.pdf \n**Batch Name :** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
